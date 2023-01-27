@@ -46,7 +46,7 @@ body {
     --box-height: 133px;
     --box-width: 200px;
     /* Retro BG colors */ 
-    --color-vline: #560e3e;
+    --color-vline: #470b33;
     --color-vline-new: #52b788;
     /* Palette */
     --color-one: #344e41;
@@ -55,6 +55,12 @@ body {
     --color-four: #b1baa5;
     --color-five: #dad7cd;
     /* Anim colors */
+    --color-primary: #fd8fb4;
+    --color-secondary: #c52258;
+    --color-tertiary: #830f36;
+    --color-quaternary: #6b112f;
+    --color-quinary: #420219;
+    /*
     --color-primary: #71092C;
     --color-secondary: #5E0825;
     --color-tertiary: #4B061D;
