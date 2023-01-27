@@ -80,6 +80,7 @@ body {
     text-align: center;
     min-height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
 .slider {
@@ -99,6 +100,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: calc(7vh + 0vw);
+    
+    max-width: fit-content;
 }
 
 .flex-vertical h1 {
@@ -154,8 +157,8 @@ body {
 }
 
 .social-container img {
-    min-width: 3vw;
-    max-width: calc(10vh + 4vw);
+    min-width: 2.8vw;
+    max-width: calc(9vh + 4vw);
     min-height: 1vw;
 }
 
