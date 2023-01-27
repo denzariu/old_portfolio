@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+
+
+
+@font-face {
+    font-family: "FontAlba";
+    src: url("Assets/fonts/ALBAS__.TTF") format("truetype");
+}
+
+/* Other fonts
+@font-face {
+    font-family: "FontBlix";
+    src: url("Assets/fonts/Blix-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "FontBytes";
+    src: url("Assets/fonts/256BYTES.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "FontBroadway";
+    src: url("Assets/fonts/Broadway.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "FontAnagram";
+    src: url("Assets/fonts/AnagramShadowNF.ttf") format("truetype");
+}
+*/
+
+/* Rework */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    /* background-color: #eff8e2; */
+    background-color: var(--color-four);
+    color: var(--color-primary);
+    text-align: justify;
+}
+
+:root {
+    --box-height: 133px;
+    --box-width: 200px;
+    /* Retro BG colors */ 
+    --color-vline: #560e3e;
+    --color-vline-new: #52b788;
+    /* Palette */
+    --color-one: #344e41;
+    --color-two: #3a5a40;
+    --color-three: #588157;
+    --color-four: #b1baa5;
+    --color-five: #dad7cd;
+    /* Anim colors */
+    --color-primary: #71092C;
+    --color-secondary: #5E0825;
+    --color-tertiary: #4B061D;
+    --color-quaternary: #390516;
+    --color-quinary: #26030F;
+    /* Slide 2 */
+    --color-slide2: #62162a;
+    --color-slide2-text: #b3baa7;
+    --color-slide2-stroke: #7e535f;
+}
+
+.center-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.slider {
+    
+}
+
+.slides {
+    position: relative;
+
+    gap: 20px;
+    /* Test purposes */
+    border: 1px solid #111;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: calc(7vh + 0vw);
+}
+
+.flex-vertical h1 {
+    flex: 1;
+    text-shadow: 0.164vw 0.302vh 0 var(--color-secondary), 0.328vw 0.605vh 0 var(--color-tertiary), 0.493vw 0.908vh var(--color-quaternary), 0.657vw 1.210vh 0 var(--color-quinary);
+    font-family: FontAlba;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: calc(2rem + 9vw);
+    color: var(--color-primary);
+    animation: shadows2 2.4s ease-in infinite, move2 2.4s ease-in infinite;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+.line-1 {
+    margin-top: calc(2vh);
+    color: var(--color-primary);
+    font-size: calc(1vh + 4vw);
+    position: center;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    white-space: wrap;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.line-2 {
+    color: var(--color-primary);
+    font-size: calc(1vh + 1vw);
+    position: center;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    white-space: wrap;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.social-container {
+    flex: 1;
+    margin-top: 5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    
+    color: var(--color-three);
+    animation: moveOnce 2.4s ease-in;
+}
+
+.social-container img {
+    min-width: 3vw;
+    max-width: calc(10vh + 4vw);
+    min-height: 1vw;
+}
+
+.footnote_rights {
+    color: var(--color-primary);
+    text-align: justify;
+    font-family: FontAlba;
+    position: absolute;
+    bottom: 0;
+    right: 0.964vw;
+    font-size: calc(1.3vw + 1vh);
+}
+
+
+
+
+/*
+    ............................ BG .............................
+*/
+
+#retrobg {
+    overflow: hidden;
+    acolor: #a3c;
+    background-color: #000;
+}
+
+/* ............................................................... */
+#retrobg-sky {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( #44112d 75%, var(--color-primary) );
+}
+
+/* ............................................................... */
+#retrobg-sunWrap {
+    position: relative;
+    width: 40%;
+    margin-bottom: 0%;
+
+    align-self: center;
+}
+
+#retrobg-sun {
+    --glow-color: #d44;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient( #fcdf11, #ff623f, #fe2085 50% );
+    box-shadow: 0 0 160px 80px var( --glow-color );
+    animation: 2s ease infinite alternate retrobg-sun-glow-anim;
+}
+
+.retrobg-shutdown #retrobg-sun {
+    background-image: linear-gradient( #000, #000 40% );
+    --glow-color: #000;
+}
+
+
+
+/* ............................................................... */
+#retrobg-stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.retrobg-star {
+    position: absolute;
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+}
+
+/* ............................................................... */
+#retrobg-mountains {
+    position: fixed;
+    width: calc(97vw + 7vh);
+    height: calc(10vw + 5vh);
+    margin-bottom: 11%;
+    align-self: center;
+}
+
+.retrobg-mountain {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient( #000 70%, #111 85%, #fff1 );
+}
+
+#retrobg-mountains-left {
+    left: 0;
+    clip-path: polygon( 0% 100%,0% 55%,5% 60%,10% 55%,20% 50%,25% 42%,30% 38%,33% 35%,40% 45%,50% 50%,60% 70%,70% 85%,75% 82%,80% 91%,85% 90%,90% 95%,95% 98%,100% 100% );
+}
+
+#retrobg-mountains-right {
+    right: 0;
+    clip-path: polygon(0% 100%, 5% 95%, 10% 85%, 17% 89%, 21% 79%, 25% 78%, 29% 70%, 34% 65%, 40% 70%, 53% 55%, 60% 53%, 67% 68%, 70% 70%, 75% 66%, 80% 55%, 90% 50%, 95% 60%, 100% 57%, 100% 100% );
+}
+
+
+/* ............................................................... */
+#retrobg-ground {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    border-top: 2px solid #42102c;
+    background-color: #000;
+}
+
+.retrobg-shutdown #retrobg-ground {
+    border-color: #000;
+}
+
+#retrobg-groundShadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( #000 0%, transparent );
+}
+
+/* ............................................................... */
+#retrobg-linesWrap {
+    height: 100%;
+    perspective: 1000px;
+    perspective-origin: center top;
+}
+
+#retrobg-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: top center;
+    transform: rotateX( 84deg ) translateY( 0 );
+    animation: 2.4s linear retrobg-lines-anim;
+} 
+
+.retrobg-shutdown #retrobg-lines {
+    animation-duration: 5s;
+}
+
+#retrobg-hlines,
+#retrobg-vlines {
+    position: absolute;
+    left: calc( ( 900% - 100% ) / -2 );
+    width: 900%;
+    height: 500%;
+}
+
+#retrobg-vlines {
+    display: flex;
+    justify-content: center;
+}
+
+.retrobg-hline,
+.retrobg-vline {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-vline);
+    animation: fadeSlide 2.4s ease-in-out;
+}
+
+.retrobg-hline {
+    height: 3px;
+}
+
+.retrobg-vline {
+    width: 3px;
+}
+
+.retrobg-hline + .retrobg-hline {
+    margin-top: 98px;
+}
+
+.retrobg-vline + .retrobg-vline {
+    margin-left: 48px;
+}
+
+
+
+/* Keyframes */
+
+@keyframes shadows2 {
+    0% {
+        text-shadow: none;
+    }
+
+    10% {
+        text-shadow: 0.164vw 0.302vh 0 var(--color-secondary);
+    }
+
+    20% {
+        text-shadow: 0.164vw 0.302vh 0 var(--color-secondary), 0.328vw 0.605vh 0 var(--color-tertiary);
+    }
+
+    30% {
+        text-shadow: 0.164vw 0.302vh 0 var(--color-secondary), 0.328vw 0.605vh 0 var(--color-tertiary), 0.493vw 0.908vh var(--color-quaternary);
+    }
+
+    40% {
+        text-shadow: 0.164vw 0.302vh 0 var(--color-secondary), 0.328vw 0.605vh 0 var(--color-tertiary), 0.493vw 0.908vh var(--color-quaternary), 0.657vw 1.210vh 0 var(--color-quinary);
+    }
+
+    50% {
+        text-shadow: 0.164vw 0.302vh 0 var(--color-secondary), 0.328vw 0.605vh 0 var(--color-tertiary), 0.493vw 0.908vh var(--color-quaternary), 0.657vw 1.210vh 0 var(--color-quinary);
+    }
+
+    60% {
+        text-shadow: 0.164vw 0.302vh 0 var(--color-secondary), 0.328vw 0.605vh 0 var(--color-tertiary), 0.493vw 0.908vh var(--color-quaternary), 0.657vw 1.210vh 0 var(--color-quinary);
+    }
+
+    70% {
+        text-shadow: 0.164vw 0.302vh 0 var(--color-secondary), 0.328vw 0.605vh 0 var(--color-tertiary), 0.493vw 0.908vh var(--color-quaternary);
+    }
+
+    80% {
+        text-shadow: 0.164vw 0.302vh 0 var(--color-secondary), 0.328vw 0.605vh 0 var(--color-tertiary);
+    }
+
+    90% {
+        text-shadow: 0.164vw 0.302vh 0 var(--color-secondary);
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    40% {
+        transform: translate(-0.657vw, -1.210vh);
+    }
+
+    50% {
+        transform: translate(-0.657vw, -1.210vh);
+    }
+
+    60% {
+        transform: translate(-0.657vw, -1.210vh);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes moveOnce {
+    0% {
+        transform: translate(0px, -2.8em);
+    }
+
+    40% {
+        transform: translate(0px, -2.8em);
+    }
+
+    50% {
+        transform: translate(0px, -2.8em);
+    }
+
+    60% {
+        transform: translate(0px, -2.8em);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes retrobg-sun-glow-anim {
+    from {
+        box-shadow: 0 0 160px 80px var( --glow-color );
+    }
+
+    to {
+        box-shadow: 0 0 200px 95px var( --glow-color );
+    }
+}
+
+@keyframes retrobg-lines-anim {
+    0% {
+        transform: rotateX( 84deg ) translateY( 0 );
+    }
+
+    50% {
+        transform: rotateX( 84deg ) translateY( 100px );
+    }
+
+    100% {
+        transform: rotateX( 84deg ) translateY( 200px );
+    }
+}
+
+/* Fade into other colors */
+@keyframes fadeLines {
+    0%    {background-color: var(--color-vline)}
+    50%   {background-color: var(--color-vline-new)}
+    100%  {background-color: var(--color-vline)}
+}
+

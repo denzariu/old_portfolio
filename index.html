@@ -4,11 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Initial test commit</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, magnam unde repellat beatae eligendi expedita excepturi accusamus iusto incidunt fugiat voluptatem accusantium veniam doloremque nulla libero non quis autem. Nostrum.</p>
-    
+    <script type="text/javascript" src="index.js"></script>
+    <div id="retrobg">
+        <div id="retrobg-sky">
+            <div id="retrobh-stars">
+                <div class="retrobg-star" style="left: 35%; top: 15%; transform: scale(3);"></div>
+                <div class="retrobg-star" style="left: 7%; top: 5%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="left: 4%; top: 10%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="left: 33%; top: 16%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="left: 13%; top: 39%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="left: 28%; top: 50%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="left: 42%; top: 17%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="left: 21%; top: 30%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="left: 40%; top: 26%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="left: 8%; top: 9%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="left: 15%; top: 21%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="left: 3%; top: 44%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="left: 21%; top: 19%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="left: 18%; top: 41%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="left: 11%; top: 29%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="right: 20%; top: 8%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="right: 10%; top: 21%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="right: 38%; top: 31%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="right: 14%; top: 11%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="right: 27%; top: 17%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="right: 21%; top: 43%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="right: 42%; top: 17%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="right: 21%; top: 30%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="right: 42%; top: 23%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="right: 9%; top: 9%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="right: 12%; top: 22%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="right: 3%; top: 41%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="right: 23%; top: 21%; transform: scale(1);"></div>
+                <div class="retrobg-star" style="right: 18%; top: 45%; transform: scale(2);"></div>
+                <div class="retrobg-star" style="right: 15%; top: 25%; transform: scale(1);"></div>
+            </div>
+            <div id="retrobg-sunWrap">
+                <div id="retrobg-sun"></div>
+            </div>
+            <div id="retrobg-mountains">
+                <div class="retrobg-mountain" id="retrobg-mountains-left"></div>
+                <div class="retrobg-mountain" id="retrobg-mountains-right"></div>
+            </div>
+            <div id="retrobg-cityWrap">
+                <div id="retrobg-city">
+                    <div class="retrobg-building" style="left: 4.0%; height: 20%; width: 3.0%;"></div>
+                </div>
+            </div>
+            <div id="retrobg-ground">
+                <div id="retrobg-linesWrap">
+                    <div id="retrobg-lines">
+                        <div id="retrobg-vlines">
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                            <div class="retrobg-vline"></div>
+                        </div>
+                        <div id="retrobg-hlines">
+                            <div class="retrobg-hline"></div>
+                            <div class="retrobg-hline"></div>
+                            <div class="retrobg-hline"></div>
+                            <div class="retrobg-hline"></div>
+                            <div class="retrobg-hline"></div>
+                            <div class="retrobg-hline"></div>
+                            <div class="retrobg-hline"></div>
+                            <div class="retrobg-hline"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="retrobg-groundShadow"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-area">
+        <div class="slider">
+            <div class="slides active" id="slide1">
+                <div class="flex-vertical">
+                    <h1 class="big-text">Denzariu</h1>
+                    <div class="description">
+                        <p class="line-1">Hi!</p>
+                        <p class="line-2" id="dynamicText">&nbsp;</p>
+                    </div>
+                    <div class="social-container">
+                        <a href="https://github.com/denzariu"><img src="Assets/images/Git2_128px.png"/></a>
+                        <a href="https://www.linkedin.com/in/denis-stefan-pinzariu-106b58189/"><img src="Assets/images/LinkedIn_128px.png"/></a>
+                        <a href="mailto:denisstefanpinzariu@gmail.com"><img src="Assets/images/Mail_128px.png"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footnote_rights">
+        <p>2023 Denzariu</p>
+    </div>
 </body>
 </html>
