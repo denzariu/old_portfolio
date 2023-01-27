@@ -83,8 +83,9 @@ body {
     position: relative;
 
     gap: 20px;
-    /* Test purposes */
+    /* Test purposes
     border: 1px solid #111;
+    */
 }
 
 .flex-vertical {
