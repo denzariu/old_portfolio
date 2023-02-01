@@ -1,14 +1,15 @@
 // AT BOOT //
-var txt = " I am Denzariu";
-var txt2 = " I am Denis-Stefan Pinzariu, you can see some of what I can do here:"
+var txt = "I am Denzariu";
+var txt2 = "I am Denis-Ștefan Pînzariu."
+var txt_line2 = "You can check out some of my projects:"
 var i = 0;
-var speed = 125;
+var j = 0;
+var speed = 75;
 
 setTimeout(addThenDeleteText, 2400);
 
 function addThenDeleteText() {
     document.getElementById("dynamicText").className += " line-1 anim-typewriter";
-    
     addText();
 }
 
@@ -39,5 +40,15 @@ function addNewText() {
         document.getElementById("dynamicText").innerHTML += txt2.charAt(i);
         i++;
         setTimeout(addNewText, speed);
+    }
+    else 
+        setTimeout(addSecondLineText, speed*4);
+}
+
+function addSecondLineText() {
+    if (j < txt_line2.length) {
+        document.getElementById("dynamicText2").innerHTML += txt_line2.charAt(j);
+        j++;
+        setTimeout(addSecondLineText, speed);
     }
 }
