@@ -346,9 +346,23 @@ body {
 .project-featured {
     position: fixed;
     bottom: 2%;
-    left: calc(50vw - calc(3.4vh - 0.4vw));
-    width: calc(6.8vh - 0.8vw);
+    left: calc(57vw - calc(3.4vh - 0.5vw));
+    width: calc(6.8vh - 1vw);
 }
+
+.project-featured-2 {
+    position: fixed;
+    bottom: 2%;
+    left: calc(43vw - calc(3.4vh - 0.5vw));
+    width: calc(6.8vh - 1vw);
+}
+
+/* .project-featured-3 {
+    position: fixed;
+    bottom: 2%;
+    left: calc(60vw - calc(3.4vh - 0.4vw));
+    width: calc(6.8vh - 0.8vw);
+} */
 
 .rotating {
     -webkit-animation: rotating 2s linear infinite;
