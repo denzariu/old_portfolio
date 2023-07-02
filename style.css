@@ -1,35 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
 
-
-
 @font-face {
     font-family: "FontAlba";
     src: url("Assets/fonts/ALBAS__.TTF") format("truetype");
 }
-
-/* Other fonts
-@font-face {
-    font-family: "FontBlix";
-    src: url("Assets/fonts/Blix-Black.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "FontBytes";
-    src: url("Assets/fonts/256BYTES.TTF") format("truetype");
-}
-
-@font-face {
-    font-family: "FontBroadway";
-    src: url("Assets/fonts/Broadway.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "FontAnagram";
-    src: url("Assets/fonts/AnagramShadowNF.ttf") format("truetype");
-}
-*/
-
-/* Rework */
 
 body {
     display: flex;
@@ -113,8 +87,6 @@ body {
     text-align: center;
     margin: 0;
 }
-
-
 
 .line-1 {
     margin-top: calc(2vh);
@@ -204,8 +176,6 @@ body {
         width: calc(6.8vh - 1vw)!important;
     }
 }
-
-
 
 /*
     ............................ BG .............................
@@ -397,11 +367,11 @@ body {
 } */
 
 .rotating {
-    -webkit-animation: rotating 2s linear infinite;
-    -moz-animation: rotating 2s linear infinite;
-    -ms-animation: rotating 2s linear infinite;
-    -o-animation: rotating 2s linear infinite;
-    animation: rotating 2s linear infinite;
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
   }
 
 /* Keyframes */
