@@ -172,6 +172,38 @@ body {
     font-size: calc(1.3vw + 1vh);
 }
 
+@media only screen and (min-width: 1200px) {
+    
+    .project-container {
+        position: absolute!important;
+        top: 7vh!important;
+        left: 0vw!important;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5vh;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-vline);
+        padding: 20px 10px;
+        border-top-right-radius: 20%;
+        border-bottom-right-radius: 20%;
+        border: 4px solid #005a70;
+        border-left: 0px;
+    }
+    .project-featured {
+        position: inherit!important;
+        flex: 1 1!important;
+        left: calc(3vw)!important;
+        width: calc(6.8vh - 1vw)!important;
+    }
+    
+    .project-featured-2 {
+        position: inherit!important;
+        flex: 1 1!important;
+        left: calc(3vw)!important;
+        width: calc(6.8vh - 1vw)!important;
+    }
+}
 
 
 
