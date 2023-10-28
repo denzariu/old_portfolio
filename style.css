@@ -139,13 +139,13 @@ body {
 }
 
 .footnote_rights {
-    color: var(--color-primary);
+    /* color: var(--color-primary);
     text-align: justify;
     font-family: FontAlba;
     position: absolute;
     bottom: 0;
     right: 0.964vw;
-    font-size: calc(1.3vw + 1vh);
+    font-size: calc(1.3vw + 1vh); */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -153,35 +153,35 @@ body {
     .project-container {
         position: absolute!important;
         top: 7vh!important;
-        left: 0vw!important;
+        right: 0vw!important;
         bottom: unset!important;
-        right: unset!important;
-        display: flex;
-        flex-direction: column;
-        gap: 2vh;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--color-vline);
-        padding: 16px 16px;
-        border-top-right-radius: 5%;
-        border-bottom-right-radius: 5%;
-        border: 4px solid #005a70;
+        left: unset!important;
+        /* background-color: var(--color-vline); */
+        /* padding: 16px 16px!important; */
+        
         border-left: 0px;
     }
+    .project-background {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0.5rem 0.5rem!important;
+        border-right-width: 0!important;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        /* border-bottom-width: 4px!important; */
+        border: 4px solid #005a70;
+    }
+
     .project-featured {
-        position: inherit!important;
-        flex: 1 1!important;
-        left: calc(3vw)!important;
+        /* position: inherit!important; */
+        /* flex: 1 1!important; */
+        /* left: calc(3vw)!important; */
         width: calc(6.8vh - 1vw)!important;
     }
     
-    .project-featured-2 {
-        position: inherit!important;
-        flex: 1 1!important;
-        left: calc(3vw)!important;
-        width: calc(6.8vh - 1vw)!important;
-    }
 }
+
 
 /*
     ............................ BG .............................
@@ -345,22 +345,36 @@ body {
 
 .project-container {
     position: absolute;
+    direction: rtl;
     left: 0;
     right: 0;
-    bottom: 1rem;
-    gap: 1rem;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project-featured {
-    width: calc(6.8vh - 1vw);
+.project-background {
+    gap: 1rem;
+    background-color: #014152;
+    padding: 0.25rem 1rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-top: 4px solid #005a70;
+    /* border-bottom-width: 0; */
 }
 
-.project-featured-2 {
-    width: calc(6.8vh - 1vw);
+.project-featured {
+    width: calc(5.8vh - 1vw);
+    padding: 0.25rem;
 }
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none !important;
+    color: inherit;
+}
+
 
 /* .project-featured-3 {
     position: fixed;
@@ -375,6 +389,14 @@ body {
     -ms-animation: rotating 5s linear infinite;
     -o-animation: rotating 5s linear infinite;
     animation: rotating 5s linear infinite;
+  }
+
+.rotating-reverse {
+    -webkit-animation: rotating 5s linear infinite reverse;
+    -moz-animation: rotating 5s linear infinite reverse;
+    -ms-animation: rotating 5s linear infinite reverse;
+    -o-animation: rotating 5s linear infinite reverse;
+    animation: rotating 5s linear infinite reverse;
   }
 
 /* Keyframes */
